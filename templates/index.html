@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magazin Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .product { display: inline-block; margin: 20px; text-align: center; }
+        .product img { width: 200px; height: auto; }
+        .product h2 { margin: 10px 0 5px; }
+        .product p { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Produse disponibile</h1>
+    {% for name, price, image in products %}
+        <div class="product">
+            <img src="{{ url_for('static', filename=image) }}" alt="{{ name }}">
+            <h2>{{ name }}</h2>
+            <p>{{ price }} RON</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
