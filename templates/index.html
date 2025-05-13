@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Magazin Online</title>
+    <title>Magazin Online Automatizat</title>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
         .product { display: inline-block; margin: 20px; text-align: center; }
@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <h1>Produse disponibile</h1>
+    <h1>Produse disponibile în stoc</h1>
     {% for name, price, image in products %}
         <div class="product">
             <img src="{{ url_for('static', filename=image) }}" alt="{{ name }}">
