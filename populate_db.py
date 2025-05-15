@@ -1,7 +1,7 @@
 import sqlite3
 
 products = [
-    ("Telefon performant", 1200, "images/phone.jpg"),
+    ("Telefon inteligent", 1200, "images/phone.jpg"),
     ("Laptop performant", 3500, "images/laptop.jpg"),
     ("Ceas Inteligent", 800, "images/watch.jpg")
 ]
